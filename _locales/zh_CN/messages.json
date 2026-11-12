@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "悬停价格换算器"
+  },
+  "extDescription": {
+    "message": "将鼠标悬停在任意网站的价格上，即可立即看到换算成您所用货币的金额。"
+  },
+  "actionTitle": {
+    "message": "价格换算设置"
+  },
+  "settingsTitle": {
+    "message": "价格换算设置"
+  },
+  "heading": {
+    "message": "价格换算"
+  },
+  "targetLabel": {
+    "message": "将价格显示为"
+  },
+  "fallbackLabel": {
+    "message": "如果价格已经是该货币"
+  },
+  "fallbackNone": {
+    "message": "不显示任何内容"
+  },
+  "convertTo": {
+    "message": "换算为$currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "刷新"
+  },
+  "ratesUpdated": {
+    "message": "汇率更新时间：$time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "尚未下载汇率"
+  },
+  "downloadError": {
+    "message": "下载失败：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "来源：$source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "在任意网站上将鼠标悬停在价格上，即可看到以上方所选货币显示的金额。"
+  },
+  "groupCommon": {
+    "message": "常用"
+  },
+  "groupAll": {
+    "message": "所有货币"
+  },
+  "tipNoRates": {
+    "message": "暂无汇率"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

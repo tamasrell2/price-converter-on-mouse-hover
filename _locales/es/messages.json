@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Conversor de precios al pasar el ratón"
+  },
+  "extDescription": {
+    "message": "Pasa el ratón sobre un precio en cualquier web y míralo al instante convertido a tu moneda."
+  },
+  "actionTitle": {
+    "message": "Ajustes del conversor de precios"
+  },
+  "settingsTitle": {
+    "message": "Ajustes del conversor de precios"
+  },
+  "heading": {
+    "message": "Conversor de precios"
+  },
+  "targetLabel": {
+    "message": "Mostrar los precios en"
+  },
+  "fallbackLabel": {
+    "message": "Si el precio ya está en esa moneda"
+  },
+  "fallbackNone": {
+    "message": "No mostrar nada"
+  },
+  "convertTo": {
+    "message": "Convertir a $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Actualizar"
+  },
+  "ratesUpdated": {
+    "message": "Tipos de cambio actualizados: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Todavía no se han descargado los tipos de cambio"
+  },
+  "downloadError": {
+    "message": "Error en la descarga: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Fuente: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Pasa el ratón sobre un precio en cualquier web para verlo en la moneda de arriba."
+  },
+  "groupCommon": {
+    "message": "Habituales"
+  },
+  "groupAll": {
+    "message": "Todas las monedas"
+  },
+  "tipNoRates": {
+    "message": "Sin tipo de cambio"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

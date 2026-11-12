@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Price Converter on Mouse Hover"
+  },
+  "extDescription": {
+    "message": "Hover over a price on any website and see it converted to your currency instantly."
+  },
+  "actionTitle": {
+    "message": "Price converter settings"
+  },
+  "settingsTitle": {
+    "message": "Price converter settings"
+  },
+  "heading": {
+    "message": "Price Converter"
+  },
+  "targetLabel": {
+    "message": "Show prices in"
+  },
+  "fallbackLabel": {
+    "message": "If a price is already in that currency"
+  },
+  "fallbackNone": {
+    "message": "Show nothing"
+  },
+  "convertTo": {
+    "message": "Convert to $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "ratesUpdated": {
+    "message": "Rates updated: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "No exchange rates downloaded yet"
+  },
+  "downloadError": {
+    "message": "Download failed: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Source: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Hover over a price on any website to see it in the currency above."
+  },
+  "groupCommon": {
+    "message": "Common"
+  },
+  "groupAll": {
+    "message": "All currencies"
+  },
+  "tipNoRates": {
+    "message": "No exchange rate"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

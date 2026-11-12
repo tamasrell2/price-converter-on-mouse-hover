@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kettle &amp; Pine — Outdoor Gear</title>
+<style>
+  :root { --ink: #1c2321; --muted: #5f6b66; --line: #e3e7e4; --accent: #2f6b4f; --bg: #f7f6f2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.45 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  header { display: flex; align-items: center; gap: 32px; padding: 18px 48px; background: #fff; border-bottom: 1px solid var(--line); }
+  .logo { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: var(--accent); }
+  nav { display: flex; gap: 22px; color: var(--muted); font-size: 14px; }
+  .cart { margin-left: auto; font-size: 14px; color: var(--muted); }
+  .crumbs { padding: 14px 48px 0; font-size: 13px; color: var(--muted); }
+  main { display: grid; grid-template-columns: 560px 1fr; gap: 48px; padding: 18px 48px 28px; }
+  .hero { height: 380px; border-radius: 14px; background: linear-gradient(135deg, #7fa98f 0%, #3d6e57 55%, #24493a 100%); position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; left: 90px; top: 70px; width: 380px; height: 250px; border-radius: 180px 180px 24px 24px; background: linear-gradient(180deg, #f2c14e, #e0973a); box-shadow: 0 30px 50px rgb(0 0 0 / .25); }
+  .hero::after { content: ""; position: absolute; left: 255px; top: 170px; width: 50px; height: 150px; border-radius: 26px 26px 0 0; background: #2a3b33; opacity: .85; }
+  h1 { font-size: 30px; margin: 4px 0 6px; letter-spacing: -.01em; }
+  .rating { color: #b7791f; font-size: 14px; margin-bottom: 18px; } .rating span { color: var(--muted); }
+  .price-main { font-size: 38px; font-weight: 750; letter-spacing: -.01em; }
+  .was { color: var(--muted); font-size: 16px; margin-left: 10px; text-decoration: line-through; }
+  .tax { color: var(--muted); font-size: 13px; margin: 2px 0 18px; }
+  .desc { color: #39433f; max-width: 520px; }
+  .opts { display: flex; gap: 10px; margin: 18px 0; }
+  .opt { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 8px 14px; font-size: 14px; }
+  .opt.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+  .buy { display: inline-block; background: var(--accent); color: #fff; font-weight: 650; padding: 13px 34px; border-radius: 10px; }
+  h2 { font-size: 18px; margin: 0 48px 12px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 0 48px 40px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .thumb { height: 120px; }
+  .card .body { padding: 10px 14px 14px; }
+  .card .name { font-size: 14px; color: #39433f; }
+  .card .price { font-size: 22px; font-weight: 700; margin-top: 4px; }
+  .card .price sup { font-size: 12px; vertical-align: top; position: relative; top: 3px; margin-left: 1px; }
+  .t1 { background: linear-gradient(135deg, #d8b4a0, #a8644a); }
+  .t2 { background: linear-gradient(135deg, #a7c4d9, #4c7896); }
+  .t3 { background: linear-gradient(135deg, #e7d9a6, #b59b3e); }
+  .t4 { background: linear-gradient(135deg, #c5c9d6, #6b7187); }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Kettle &amp; Pine</div>
+  <nav><span>Tents</span><span>Backpacks</span><span>Cooking</span><span>Clothing</span><span>Sale</span></nav>
+  <div class="cart">Basket (2)</div>
+</header>
+<div class="crumbs">Home › Tents › 2-person</div>
+<main>
+  <div class="hero"></div>
+  <div>
+    <h1>Ridgeline 2 Ultralight Tent</h1>
+    <div class="rating">★★★★★ <span>4.8 · 312 reviews</span></div>
+    <div><span class="price-main" id="mainPrice">249,00&nbsp;€</span><span class="was" id="wasPrice">299,00&nbsp;€</span></div>
+    <div class="tax">Incl. VAT · Free delivery from 50&nbsp;€</div>
+    <p class="desc">A freestanding two-person tent that packs down to the size of a water bottle. Weatherproof fly, two doors and a 3-minute pitch.</p>
+    <div class="opts"><span class="opt sel">Sand</span><span class="opt">Forest</span><span class="opt">Slate</span></div>
+    <span class="buy">Add to basket</span>
+  </div>
+</main>
+<h2>Complete your kit</h2>
+<div class="grid">
+  <div class="card"><div class="thumb t1"></div><div class="body"><div class="name">Trailhead 28L Daypack</div><div class="price" id="p1">89<sup>99</sup>&nbsp;€</div></div></div>
+  <div class="card"><div class="thumb t2"></div><div class="body"><div class="name">Featherlite Sleeping Pad</div><div class="price" id="p2">64<sup>50</sup>&nbsp;€</div></div></div>
+  <div class="card"><div class="thumb t3"></div><div class="body"><div class="name">Ember Camp Stove</div><div class="price" id="p3">39<sup>95</sup>&nbsp;€</div></div></div>
+  <div class="card"><div class="thumb t4"></div><div class="body"><div class="name">Summit Down Jacket</div><div class="price" id="p4">179<sup>00</sup>&nbsp;€</div></div></div>
+</div>
+</body>
+</html>

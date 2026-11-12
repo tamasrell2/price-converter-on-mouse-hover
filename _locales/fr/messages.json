@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Convertisseur de prix au survol"
+  },
+  "extDescription": {
+    "message": "Survolez un prix sur n'importe quel site et voyez-le aussitôt converti dans votre devise."
+  },
+  "actionTitle": {
+    "message": "Paramètres du convertisseur de prix"
+  },
+  "settingsTitle": {
+    "message": "Paramètres du convertisseur de prix"
+  },
+  "heading": {
+    "message": "Convertisseur de prix"
+  },
+  "targetLabel": {
+    "message": "Afficher les prix en"
+  },
+  "fallbackLabel": {
+    "message": "Si le prix est déjà dans cette devise"
+  },
+  "fallbackNone": {
+    "message": "Ne rien afficher"
+  },
+  "convertTo": {
+    "message": "Convertir en $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Actualiser"
+  },
+  "ratesUpdated": {
+    "message": "Taux mis à jour : $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Aucun taux de change téléchargé pour le moment"
+  },
+  "downloadError": {
+    "message": "Échec du téléchargement : $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Source : $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Survolez un prix sur n'importe quel site pour le voir dans la devise ci-dessus."
+  },
+  "groupCommon": {
+    "message": "Courantes"
+  },
+  "groupAll": {
+    "message": "Toutes les devises"
+  },
+  "tipNoRates": {
+    "message": "Aucun taux de change"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

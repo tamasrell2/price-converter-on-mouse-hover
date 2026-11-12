@@ -1,0 +1,48 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><title>Teszt</title>
+<style>
+ body > div, div[popover] { display: block; }
+ body{font:16px sans-serif;padding:30px;max-width:900px}
+ .row{margin:18px 0}
+ .cents{font-size:60%;vertical-align:top}
+ .a-offscreen{position:absolute;left:-10000px}
+ .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+ .big{font-size:28px;font-weight:bold}
+ td{padding:4px 12px;border:1px solid #ccc}
+</style></head><body>
+<div class="row"><span id="t1">12,99 €</span></div>
+<div class="row"><span id="t2" class="big">24<sup>99</sup> €</span></div>
+<div class="row"><span id="t3" class="big">€<span>149</span><span class="cents">95</span></span></div>
+<div class="row"><span id="t4"><span class="a-offscreen">39,90 €</span><span aria-hidden="true"><span>39<span>,</span></span><span>90</span><span>€</span></span></span></div>
+<div class="row"><span id="t5">1,234.56 EUR</span></div>
+<div class="row"><span id="t6">1&nbsp;299&nbsp;€</span></div>
+<div class="row"><span id="t7">Ár: <b>4 990 Ft</b></span></div>
+<div class="row"><span id="t8">12.990,- Ft</span></div>
+<div class="row"><table><tr><td>Modell 2024</td><td id="t9">1.299 €</td></tr></table></div>
+<p class="row" id="t10">A régi ára 1 299 € volt, de most csak <span id="t10b">999,90 €</span>, ami nagyjából 390 000 Ft lenne itthon. Ez egy hosszabb mondat, hogy legyen körülötte rendes szöveg is, ami nem ár.</p>
+<div class="row"><span id="t11">HUF 25 000</span> <span id="t12"><span class="sr-only">Ár:</span>19,– €</span></div>
+<div class="row"><span id="t13">3500 forintért</span></div>
+<div class="row" id="neg">Europa 2024 – 12 kg – Page 1 of 3</div>
+
+<a class="card" id="ing" href="#" style="display:block;width:420px;border:1px solid #ddd;margin:20px 0;color:#222;text-decoration:none">
+  <div style="display:flex;justify-content:space-between;padding:8px">
+    <div><div class="price" style="font-size:20px;font-weight:700"><span id="ingp">52,9 M Ft</span></div>
+    <div id="ingm" style="font-size:13px;color:#666">1 102 083 Ft/m<sup>2</sup></div></div>
+    <div style="font-size:13px">Budapest XII. kerület</div>
+  </div>
+  <div id="ingimg" style="height:160px;background:#cde"></div>
+  <div style="padding:8px">2 szoba · 48 m² · 1. emelet</div>
+  <div class="price" style="padding:8px;font-size:20px"><span id="ingp2">47,5 M Ft</span></div>
+</a>
+<div id="amz" style="width:300px;border:1px solid #ddd;padding:8px;margin:20px 0">
+  <div id="amzimg" style="height:120px;background:#eee"></div>
+  <div><span>4,5 / 5</span> <span id="amzstars" style="display:inline-block;width:80px;height:16px;background:#fa0"></span></div>
+  <div><span id="amzcount">12,345</span></div>
+  <div><span class="a-price" id="amzp" style="font-size:22px"><span class="a-offscreen" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">$129.99</span><span aria-hidden="true"><span class="a-price-symbol" style="font-size:12px;vertical-align:top">$</span><span class="a-price-whole">129<span class="a-price-decimal">.</span></span><span class="a-price-fraction" style="font-size:12px;vertical-align:top">99</span></span></span></div>
+  <div style="font-size:12px;color:#666">List: <span id="amzlist" style="text-decoration:line-through">$159.99</span></div>
+</div>
+<div class="row"><span id="dyn">10 €</span></div>
+<div class="row"><span id="u1">$1,299.99</span> · <span id="u2">£49.95</span> · <span id="u3">129,99 zł</span> · <span id="u4">¥12,800</span> · <span id="u5">49,90 CHF</span> · <span id="u6">USD 20</span> · <span id="u7" class="big">$19<sup>99</sup></span></div>
+<div class="row"><iframe id="frm" src="/frame" style="width:300px;height:60px;border:1px solid #999"></iframe></div>
+<div class="row"><span id="clickme" onclick="this.dataset.n=(+this.dataset.n||0)+1; document.getElementById('log').textContent='katt '+this.dataset.n">99 €</span> <span id="log"></span></div>
+<div class="row" style="overflow:hidden;width:600px;height:40px;position:relative"><div id="car" style="position:absolute;left:0;top:0;white-space:nowrap;font-size:20px"><span id="carp">777 €</span> <span style="display:inline-block;width:400px"></span></div></div>
+</body></html>

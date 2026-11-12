@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "होवर प्राइस कन्वर्टर"
+  },
+  "extDescription": {
+    "message": "किसी भी वेबसाइट पर कीमत पर माउस ले जाएँ और उसे तुरंत अपनी मुद्रा में बदला हुआ देखें।"
+  },
+  "actionTitle": {
+    "message": "प्राइस कन्वर्टर सेटिंग्स"
+  },
+  "settingsTitle": {
+    "message": "प्राइस कन्वर्टर सेटिंग्स"
+  },
+  "heading": {
+    "message": "प्राइस कन्वर्टर"
+  },
+  "targetLabel": {
+    "message": "कीमतें इस मुद्रा में दिखाएँ"
+  },
+  "fallbackLabel": {
+    "message": "अगर कीमत पहले से उसी मुद्रा में हो"
+  },
+  "fallbackNone": {
+    "message": "कुछ न दिखाएँ"
+  },
+  "convertTo": {
+    "message": "$currency$ में बदलें",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "रीफ़्रेश"
+  },
+  "ratesUpdated": {
+    "message": "विनिमय दरें अपडेट हुईं: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "अभी तक कोई विनिमय दर डाउनलोड नहीं हुई"
+  },
+  "downloadError": {
+    "message": "डाउनलोड विफल रहा: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "स्रोत: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "किसी भी वेबसाइट पर कीमत पर माउस ले जाएँ और उसे ऊपर चुनी गई मुद्रा में देखें।"
+  },
+  "groupCommon": {
+    "message": "आम मुद्राएँ"
+  },
+  "groupAll": {
+    "message": "सभी मुद्राएँ"
+  },
+  "tipNoRates": {
+    "message": "विनिमय दर उपलब्ध नहीं"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

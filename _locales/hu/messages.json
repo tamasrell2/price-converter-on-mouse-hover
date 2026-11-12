@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "Ár átváltó"
+  },
+  "extDescription": {
+    "message": "Vidd az egeret egy ár fölé bármelyik weboldalon, és azonnal megmutatja a saját valutádban."
+  },
+  "actionTitle": {
+    "message": "Ár átváltó beállítások"
+  },
+  "settingsTitle": {
+    "message": "Ár átváltó beállítások"
+  },
+  "heading": {
+    "message": "Ár átváltó"
+  },
+  "targetLabel": {
+    "message": "Mutassa ebben a valutában"
+  },
+  "fallbackLabel": {
+    "message": "Ha az ár már ebben a valutában van"
+  },
+  "fallbackNone": {
+    "message": "Ne mutasson semmit"
+  },
+  "convertTo": {
+    "message": "Átváltás ebbe: $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Frissítés"
+  },
+  "ratesUpdated": {
+    "message": "Árfolyamok frissítve: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Még nincs letöltött árfolyam"
+  },
+  "downloadError": {
+    "message": "Hiba a letöltésnél: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Forrás: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Vidd az egeret egy ár fölé bármelyik weboldalon, és megmutatja a fenti valutában."
+  },
+  "groupCommon": {
+    "message": "Gyakori"
+  },
+  "groupAll": {
+    "message": "Összes valuta"
+  },
+  "tipNoRates": {
+    "message": "Nincs árfolyam"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}

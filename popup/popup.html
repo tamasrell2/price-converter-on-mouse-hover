@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="settingsTitle">Price converter settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="heading">Price Converter</h1>
+  </header>
+
+  <label class="field">
+    <span class="label" data-i18n="targetLabel">Show prices in</span>
+    <select id="target"></select>
+  </label>
+
+  <label class="field">
+    <span class="label" data-i18n="fallbackLabel">If a price is already in that currency</span>
+    <select id="fallback"></select>
+  </label>
+
+  <div class="status">
+    <span id="status">…</span>
+    <button id="refresh" type="button" class="link" data-i18n="refresh">Refresh</button>
+  </div>
+  <div class="error" id="error" hidden></div>
+
+  <p class="hint" data-i18n="hint">Hover over a price on any website to see it in the currency above.</p>
+
+  <script src="../src/defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "extName": {
+    "message": "محوّل الأسعار عند تمرير المؤشر"
+  },
+  "extDescription": {
+    "message": "مرّر المؤشر فوق أي سعر في أي موقع لترى قيمته بعملتك على الفور."
+  },
+  "actionTitle": {
+    "message": "إعدادات محوّل الأسعار"
+  },
+  "settingsTitle": {
+    "message": "إعدادات محوّل الأسعار"
+  },
+  "heading": {
+    "message": "محوّل الأسعار"
+  },
+  "targetLabel": {
+    "message": "عرض الأسعار بعملة"
+  },
+  "fallbackLabel": {
+    "message": "إذا كان السعر بهذه العملة أصلًا"
+  },
+  "fallbackNone": {
+    "message": "عدم عرض أي شيء"
+  },
+  "convertTo": {
+    "message": "التحويل إلى $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "تحديث"
+  },
+  "ratesUpdated": {
+    "message": "آخر تحديث لأسعار الصرف: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "لم يتم تنزيل أسعار الصرف بعد"
+  },
+  "downloadError": {
+    "message": "فشل التنزيل: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "المصدر: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "مرّر المؤشر فوق أي سعر في أي موقع لتراه بالعملة المحددة أعلاه."
+  },
+  "groupCommon": {
+    "message": "العملات الشائعة"
+  },
+  "groupAll": {
+    "message": "جميع العملات"
+  },
+  "tipNoRates": {
+    "message": "لا يتوفر سعر صرف"
+  },
+  "textDirection": {
+    "message": "rtl",
+    "description": "Writing direction of this language: ltr or rtl"
+  }
+}
