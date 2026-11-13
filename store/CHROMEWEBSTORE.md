@@ -186,10 +186,10 @@ Things worth knowing when filling in the form honestly:
 ## Privacy Policy
 
 **Privacy Policy URL** [REQUIRED — `<all_urls>` makes it mandatory]
-`store/privacy-policy.html` is ready. Host it publicly (GitHub Pages or a public Google Doc, see `PUBLISHING.md`) and paste the URL here:
+Hosted as a public Google Doc (anyone with the link can view). Paste exactly this URL:
 
 ```
-https://docs.google.com/document/d/1kmCfNNrbafUcVvh8xdTxSla6XuozfMLiOCYAF5-Cpyw/view  (public Google Doc, anyone with the link can view)
+https://docs.google.com/document/d/1kmCfNNrbafUcVvh8xdTxSla6XuozfMLiOCYAF5-Cpyw/view
 ```
 Contact email already filled in (tamasrell@gmail.com).
 
