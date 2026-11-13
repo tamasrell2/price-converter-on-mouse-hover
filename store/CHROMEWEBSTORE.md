@@ -150,6 +150,18 @@ Paste each row into the matching field of the dashboard's **Privacy practices** 
 | `https://cdn.jsdelivr.net/*` | host_permissions | Second backup source: a public JSON file of currency rates served from this CDN, used only if both other sources fail. Only data (JSON) is downloaded — no code is loaded or executed. |
 | Content script on `<all_urls>` | host_permissions (content_scripts matches) | The extension's single purpose is to convert prices on whatever website the user is viewing — shops, travel sites, marketplaces — which cannot be listed in advance. On each page it reads only the short piece of visible text around the mouse pointer to recognise a price, does the conversion locally, and draws a small bubble next to it. Page content is never stored, modified or sent anywhere. The user can disable or remove the extension at any time from Chrome's extension manager. |
 
+**Dashboard layout:** `storage` and `alarms` each have their own field; ALL host permissions (the three rate APIs and the all-sites content script) share ONE "Host permission justification" field, limited to 1,000 characters. Paste this block there (861 characters):
+
+```
+Content script on all websites: the extension's single purpose is to convert prices on whatever site the user is viewing (shops, travel sites, marketplaces), which cannot be listed in advance. On each page it reads only the short piece of visible text under the mouse pointer to recognise a price, converts it locally and shows a small bubble. Page content is never stored, modified or sent anywhere. Users can disable the extension at any time.
+
+open.er-api.com: primary source of the public exchange-rate table. Anonymous GET request, no user data sent.
+
+api.frankfurter.dev: backup source (European Central Bank rates), used only if the primary source fails. Anonymous GET request, no user data.
+
+cdn.jsdelivr.net: second backup, a public JSON file of rates, used only if both other sources fail. Only JSON data is downloaded; no code is loaded or executed.
+```
+
 **Remote code:** No. All JavaScript is included in the package. The only network responses are JSON exchange-rate tables, which are parsed as data and never executed.
 
 ---
