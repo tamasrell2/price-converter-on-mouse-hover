@@ -13,6 +13,7 @@ Kattints a bővítmény ikonjára (vagy `chrome://extensions` → Ár átváltó
 - **Mutassa ebben a valutában** – a célvaluta (alap: a hely szerinti valuta, vagy dollár)
 - **Ha az ár már ebben a valutában van** – alapból nem mutat semmit; választható egy másik valuta is (pl. forint árnál euró)
 - árfolyamok kézi frissítése
+- „Support me on Ko-fi” gomb (sima link, külső szkript nélkül)
 
 Ki-be kapcsolni a Chrome bővítménykezelőjében lehet (`chrome://extensions`).
 

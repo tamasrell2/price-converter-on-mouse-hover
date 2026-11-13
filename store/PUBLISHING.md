@@ -37,7 +37,7 @@ Mindkét esetben nyisd meg a linket egy **inkognitóablakban**, hogy biztosan be
 A projekt mappájában (`price-converter-on-mouse-hover`) futtasd ezt. Csak a bővítmény működéséhez szükséges fájlok kerülnek bele:
 
 ```bash
-zip -r price-converter-on-mouse-hover-1.6.1.zip manifest.json _locales src popup icons
+zip -r price-converter-on-mouse-hover-1.7.0.zip manifest.json _locales src popup icons
 ```
 
 A `store/`, `test/` és `tools/` mappát, valamint a `README.md`-t **ne** tedd bele.
@@ -89,6 +89,6 @@ A `CHROMEWEBSTORE.md` → *Permissions Justification* és *Privacy & Data Use* r
 5. **Submit for review.** A frissítések ellenőrzése általában gyorsabb, sokszor egy napon belül megvan.
 6. A telepített példányok a jóváhagyás után néhány órán belül maguktól frissülnek.
 
-## Buy Me a Coffee (később)
+## Ko-fi támogatás
 
-Ha bekerül a link a bővítménybe, egy rövid mondattal említsd meg a bolti leírás végén is (pl. „Like it? You can support development at …”). Adománylink megengedett, de semmilyen funkciót nem szabad mögé zárni.
+Az 1.7.0-tól a beállítások ablak alján van egy „Support me on Ko-fi” gomb (https://ko-fi.com/R5C12AJWQ8), és az angol bolti leírás végén is szerepel. Adománylink megengedett, de semmilyen funkciót nem szabad mögé zárni.

@@ -17,6 +17,14 @@ for (let i = 0; i < 20; i++) RATES['X' + String.fromCharCode(65 + i) + 'X'] = 1;
   });
   let [sw] = ctx.serviceWorkers();
   if (!sw) sw = await ctx.waitForEvent('serviceworker');
+  // A telepítéskor induló valódi árfolyam-letöltést megvárjuk, különben felülírná a teszt ál-árfolyamát.
+  await sw.evaluate(async () => {
+    for (let i = 0; i < 60; i++) {
+      const s = await chrome.storage.local.get(['rateData', 'lastError']);
+      if (s.rateData || s.lastError) return;
+      await new Promise(r => setTimeout(r, 250));
+    }
+  });
   await sw.evaluate(async (rates) => {
     await chrome.storage.local.set({ rateData: { rates, date: '2026-11-11', source: 'teszt', fetchedAt: Date.now() }, lastError: null });
     await chrome.storage.sync.set({ fallback: 'EUR' }); // a régi tesztek a forint -> euró viselkedést várják

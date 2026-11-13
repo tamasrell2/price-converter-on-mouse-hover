@@ -9,6 +9,14 @@ async function scenario(name, lang, locale, timezoneId) {
   const ctx = await chromium.launchPersistentContext('', { headless: true, channel: 'chromium', locale, timezoneId,
     args: [`--disable-extensions-except=${EXT}`, `--load-extension=${EXT}`, `--lang=${lang}`], viewport: { width: 800, height: 400 } });
   let [sw] = ctx.serviceWorkers(); if (!sw) sw = await ctx.waitForEvent('serviceworker');
+  // A telepítéskor induló valódi árfolyam-letöltést megvárjuk, különben felülírná a teszt ál-árfolyamát.
+  await sw.evaluate(async () => {
+    for (let i = 0; i < 60; i++) {
+      const s = await chrome.storage.local.get(['rateData', 'lastError']);
+      if (s.rateData || s.lastError) return;
+      await new Promise(r => setTimeout(r, 250));
+    }
+  });
   await sw.evaluate(async (rates) => chrome.storage.local.set({ rateData: { rates, date: 'x', source: 'test', fetchedAt: Date.now() }, lastError: null }), RATES);
   const page = await ctx.newPage(); await page.goto('http://localhost:8767/'); await page.waitForTimeout(500);
   const tip = () => page.evaluate(() => { const h = document.querySelector('div[data-hover-price-converter]'); return h && h.checkVisibility() ? h.shadowRoot.querySelector('.tip').textContent : null; });

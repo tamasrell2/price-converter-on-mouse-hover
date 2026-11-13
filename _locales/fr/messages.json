@@ -76,5 +76,8 @@
   "textDirection": {
     "message": "ltr",
     "description": "Writing direction of this language: ltr or rtl"
+  },
+  "supportLink": {
+    "message": "Soutenez-moi sur Ko-fi"
   }
 }

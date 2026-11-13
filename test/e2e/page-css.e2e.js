@@ -9,6 +9,14 @@ const html = `<!doctype html><meta charset=utf-8><style>body > div { display: bl
   const server = http.createServer((q, r) => { r.setHeader('content-type', 'text/html; charset=utf-8'); r.end(html); }).listen(8766);
   const ctx = await chromium.launchPersistentContext('', { headless: true, channel: 'chromium', args: [`--disable-extensions-except=${EXT}`, `--load-extension=${EXT}`] });
   let [sw] = ctx.serviceWorkers(); if (!sw) sw = await ctx.waitForEvent('serviceworker');
+  // A telepítéskor induló valódi árfolyam-letöltést megvárjuk, különben felülírná a teszt ál-árfolyamát.
+  await sw.evaluate(async () => {
+    for (let i = 0; i < 60; i++) {
+      const s = await chrome.storage.local.get(['rateData', 'lastError']);
+      if (s.rateData || s.lastError) return;
+      await new Promise(r => setTimeout(r, 250));
+    }
+  });
   await sw.evaluate(async (rates) => chrome.storage.local.set({ rateData: { rates, date: 'x', source: 't', fetchedAt: Date.now() } }), RATES);
   const page = await ctx.newPage(); await page.goto('http://localhost:8766/'); await page.waitForTimeout(500);
   const state = () => page.evaluate(() => { const h = [...document.querySelectorAll('div[popover]')].find(d => d.shadowRoot); if (!h) return 'nincs host';
