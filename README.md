@@ -3,7 +3,7 @@
 Vidd az egeret egy ár fölé bármelyik weboldalon, és buborékban megmutatja a kiválasztott valutában.
 A felismert ár halványsárga kiemelést kap.
 
-- **Nyelvek:** angol (alapértelmezett), magyar, kínai (egyszerűsített), hindi, spanyol, arab (jobbról balra), francia — a böngésző nyelve szerint (`_locales/`).
+- **Nyelvek:** angol (alapértelmezett), japán, kínai (egyszerűsített), spanyol, indonéz, török, orosz, francia, valamint magyar, hindi és arab (jobbról balra) — a böngésző nyelve szerint (`_locales/`).
 - **Alapértelmezett valuta:** a gép időzónájából, ennek hiányában a böngésző nyelvi régiójából
   (pl. Europe/Budapest → forint, America/New_York → dollár). Ha nem dönthető el: amerikai dollár.
   Semmilyen adat nem megy ki a gépről, és a felhasználó választása mindig felülírja.

@@ -1,0 +1,83 @@
+{
+  "extName": {
+    "message": "Конвертер цен при наведении мыши"
+  },
+  "extDescription": {
+    "message": "Наведите курсор на цену на любом сайте и сразу увидите сумму в своей валюте."
+  },
+  "actionTitle": {
+    "message": "Настройки конвертера цен"
+  },
+  "settingsTitle": {
+    "message": "Настройки конвертера цен"
+  },
+  "heading": {
+    "message": "Конвертер цен"
+  },
+  "targetLabel": {
+    "message": "Показывать цены в валюте"
+  },
+  "fallbackLabel": {
+    "message": "Если цена уже в этой валюте"
+  },
+  "fallbackNone": {
+    "message": "Ничего не показывать"
+  },
+  "convertTo": {
+    "message": "Конвертировать: $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Обновить"
+  },
+  "ratesUpdated": {
+    "message": "Курсы обновлены: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Курсы валют ещё не загружены"
+  },
+  "downloadError": {
+    "message": "Ошибка загрузки: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Источник: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Наведите курсор на цену на любом сайте, чтобы увидеть её в выбранной выше валюте."
+  },
+  "groupCommon": {
+    "message": "Популярные"
+  },
+  "groupAll": {
+    "message": "Все валюты"
+  },
+  "tipNoRates": {
+    "message": "Нет курса валют"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  },
+  "supportLink": {
+    "message": "Поддержать меня на Ko-fi"
+  }
+}

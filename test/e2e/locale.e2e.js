@@ -49,6 +49,10 @@ async function scenario(name, lang, locale, timezoneId) {
   const es = await scenario('es', 'es', 'es-ES', 'Europe/Madrid');
   const ar = await scenario('ar', 'ar', 'ar-SA', 'Asia/Riyadh');
   const fr = await scenario('fr', 'fr', 'fr-FR', 'Europe/Paris');
+  const ja = await scenario('ja', 'ja', 'ja-JP', 'Asia/Tokyo');
+  const id = await scenario('id', 'id', 'id-ID', 'Asia/Jakarta');
+  const tr = await scenario('tr', 'tr', 'tr-TR', 'Europe/Istanbul');
+  const ru = await scenario('ru', 'ru', 'ru-RU', 'Europe/Moscow');
   const checks = [
     ['hu: forint, magyar felirat', a.target === 'HUF' && /valutában/.test(a.label)],
     ['hu: forint árnál nincs buborék', /Ft -> null/.test(a.res[1])],
@@ -60,6 +64,10 @@ async function scenario(name, lang, locale, timezoneId) {
     ['hi: rúpia, hindi felirat', hi.target === 'INR' && /मुद्रा/.test(hi.label)],
     ['es: euró, spanyol felirat', es.target === 'EUR' && /precios/.test(es.label)],
     ['fr: euró, francia felirat', fr.target === 'EUR' && /prix/.test(fr.label)],
+    ['ja: jen, japán felirat', ja.target === 'JPY' && /通貨/.test(ja.label) && ja.dir === 'ltr'],
+    ['id: rúpia, indonéz felirat', id.target === 'IDR' && /harga/.test(id.label)],
+    ['tr: líra, török felirat', tr.target === 'TRY' && /Fiyatları/.test(tr.label)],
+    ['ru: rubel, orosz felirat', ru.target === 'RUB' && /цены/.test(ru.label)],
     ['ar: rijál, arab felirat, jobbról balra', ar.target === 'SAR' && /الأسعار/.test(ar.label) && ar.dir === 'rtl'],
   ];
   for (const [n, ok] of checks) console.log(ok ? 'OK  ' : 'FAIL', n);

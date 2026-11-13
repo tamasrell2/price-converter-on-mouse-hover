@@ -1,0 +1,83 @@
+{
+  "extName": {
+    "message": "マウスオーバー価格換算"
+  },
+  "extDescription": {
+    "message": "どのサイトでも価格にマウスを合わせるだけで、あなたの通貨に換算した金額をすぐに表示します。"
+  },
+  "actionTitle": {
+    "message": "価格換算の設定"
+  },
+  "settingsTitle": {
+    "message": "価格換算の設定"
+  },
+  "heading": {
+    "message": "価格換算"
+  },
+  "targetLabel": {
+    "message": "価格の表示通貨"
+  },
+  "fallbackLabel": {
+    "message": "価格がすでにその通貨の場合"
+  },
+  "fallbackNone": {
+    "message": "何も表示しない"
+  },
+  "convertTo": {
+    "message": "$currency$に換算",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "更新"
+  },
+  "ratesUpdated": {
+    "message": "為替レート更新：$time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "為替レートはまだダウンロードされていません"
+  },
+  "downloadError": {
+    "message": "ダウンロードに失敗しました：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "出典：$source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "どのサイトでも価格にマウスを合わせると、上で選んだ通貨で表示されます。"
+  },
+  "groupCommon": {
+    "message": "よく使う通貨"
+  },
+  "groupAll": {
+    "message": "すべての通貨"
+  },
+  "tipNoRates": {
+    "message": "為替レートがありません"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  },
+  "supportLink": {
+    "message": "Ko-fiで応援する"
+  }
+}

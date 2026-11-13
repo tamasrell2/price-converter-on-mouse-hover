@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — Price Converter on Mouse Hover
 
-> Last Updated: 2026-11-13 · Extension version: 1.7.1
+> Last Updated: 2026-11-13 · Extension version: 1.8.0
 
 Single source of truth for everything typed into the Chrome Web Store Developer Dashboard.
 Copy each block into the matching dashboard field. (Hungarian step-by-step guide: `PUBLISHING.md`.)
@@ -22,6 +22,10 @@ The dashboard shows it automatically per language; nothing to type.
 | Spanish | Conversor de precios al pasar el ratón |
 | Arabic | محوّل الأسعار عند تمرير المؤشر |
 | French | Convertisseur de prix au survol |
+| Japanese | マウスオーバー価格換算 |
+| Indonesian | Konverter Harga saat Mouse Diarahkan |
+| Turkish | Fareyle Üzerine Gelince Fiyat Çevirici |
+| Russian | Конвертер цен при наведении мыши |
 
 **Short Description** [REQUIRED] — also comes from `extDescription` in each locale (all ≤ 132 chars).
 English:
@@ -44,7 +48,7 @@ FEATURES
 • Prices already in your currency stay quiet by default — or choose a second currency to convert them to.
 • Exchange rates update automatically every 6 hours, with a manual refresh button.
 • Lightweight: it only reacts when your mouse is over a price, and never alters the page's content.
-• Available in English, Hungarian, Chinese, Hindi, Spanish, Arabic and French.
+• Available in English, Japanese, Chinese, Spanish, Indonesian, Turkish, Russian, French, Hungarian, Hindi and Arabic.
 
 HOW TO USE
 1. Install the extension and pin it to your toolbar (optional).
@@ -76,7 +80,7 @@ FUNKCIÓK
 • A már a saját valutádban lévő árakhoz alapból nem mutat semmit, de választhatsz hozzájuk egy második valutát is.
 • Az árfolyamok 6 óránként maguktól frissülnek, és kézzel is frissíthetők.
 • Könnyű: csak akkor dolgozik, ha az egér egy ár fölött van, és sosem módosítja az oldal tartalmát.
-• Elérhető angolul, magyarul, kínaiul, hindiül, spanyolul, arabul és franciául.
+• Elérhető angolul, japánul, kínaiul, spanyolul, indonézül, törökül, oroszul, franciául, magyarul, hindiül és arabul.
 
 HASZNÁLAT
 1. Telepítsd a bővítményt, és ha szeretnéd, tűzd ki az eszköztárra.
@@ -98,7 +102,7 @@ Shows prices on web pages converted into the user's chosen currency when the use
 ```
 
 **Primary Language** [REQUIRED]
-English. UI is also available in Hungarian, Chinese (Simplified), Hindi, Spanish, Arabic and French.
+English. UI is also available in Japanese, Chinese (Simplified), Spanish, Indonesian, Turkish, Russian, French, Hungarian, Hindi and Arabic.
 
 ---
 
@@ -211,13 +215,13 @@ Contact email already filled in (tamasrell@gmail.com).
 
 | Version | Date | Changes | Status |
 |---------|------|---------|--------|
-| 1.7.1 | 2026-11-13 | First store submission. "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); UI in 7 languages; bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
+| 1.8.0 | 2026-11-13 | First store submission. UI in 11 languages (added Japanese, Indonesian, Turkish, Russian); "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
 
 ---
 
 ## Pre-submit checklist
 
-- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.7.1).
+- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.8.0).
 - [ ] ZIP contains only: `manifest.json`, `_locales/`, `src/`, `popup/`, `icons/` (no `store/`, `test/`, `tools/`, `README.md`, `CHROMEWEBSTORE.md`). Command in `PUBLISHING.md`.
 - [ ] Loaded the ZIP's contents unpacked in Chrome and tested: hover converts, popup opens, no console errors.
 - [ ] Every permission row above pasted into the dashboard.

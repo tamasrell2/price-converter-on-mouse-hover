@@ -1,0 +1,83 @@
+{
+  "extName": {
+    "message": "Konverter Harga saat Mouse Diarahkan"
+  },
+  "extDescription": {
+    "message": "Arahkan mouse ke harga di situs mana pun dan langsung lihat nilainya dalam mata uang Anda."
+  },
+  "actionTitle": {
+    "message": "Pengaturan konverter harga"
+  },
+  "settingsTitle": {
+    "message": "Pengaturan konverter harga"
+  },
+  "heading": {
+    "message": "Konverter Harga"
+  },
+  "targetLabel": {
+    "message": "Tampilkan harga dalam"
+  },
+  "fallbackLabel": {
+    "message": "Jika harga sudah dalam mata uang tersebut"
+  },
+  "fallbackNone": {
+    "message": "Jangan tampilkan apa pun"
+  },
+  "convertTo": {
+    "message": "Konversi ke $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Perbarui"
+  },
+  "ratesUpdated": {
+    "message": "Kurs diperbarui: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Belum ada kurs yang diunduh"
+  },
+  "downloadError": {
+    "message": "Gagal mengunduh: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Sumber: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Arahkan mouse ke harga di situs mana pun untuk melihatnya dalam mata uang di atas."
+  },
+  "groupCommon": {
+    "message": "Umum"
+  },
+  "groupAll": {
+    "message": "Semua mata uang"
+  },
+  "tipNoRates": {
+    "message": "Kurs tidak tersedia"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  },
+  "supportLink": {
+    "message": "Dukung saya di Ko-fi"
+  }
+}

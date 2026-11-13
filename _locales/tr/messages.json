@@ -1,0 +1,83 @@
+{
+  "extName": {
+    "message": "Fareyle Üzerine Gelince Fiyat Çevirici"
+  },
+  "extDescription": {
+    "message": "Herhangi bir sitede bir fiyatın üzerine gelin, tutarı anında kendi para biriminizde görün."
+  },
+  "actionTitle": {
+    "message": "Fiyat çevirici ayarları"
+  },
+  "settingsTitle": {
+    "message": "Fiyat çevirici ayarları"
+  },
+  "heading": {
+    "message": "Fiyat Çevirici"
+  },
+  "targetLabel": {
+    "message": "Fiyatları şu para biriminde göster"
+  },
+  "fallbackLabel": {
+    "message": "Fiyat zaten bu para birimindeyse"
+  },
+  "fallbackNone": {
+    "message": "Hiçbir şey gösterme"
+  },
+  "convertTo": {
+    "message": "Çevir: $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "refresh": {
+    "message": "Yenile"
+  },
+  "ratesUpdated": {
+    "message": "Kurlar güncellendi: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "noRates": {
+    "message": "Henüz döviz kuru indirilmedi"
+  },
+  "downloadError": {
+    "message": "İndirme başarısız: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "source": {
+    "message": "Kaynak: $source$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "hint": {
+    "message": "Herhangi bir sitede bir fiyatın üzerine gelerek onu yukarıdaki para biriminde görün."
+  },
+  "groupCommon": {
+    "message": "Yaygın"
+  },
+  "groupAll": {
+    "message": "Tüm para birimleri"
+  },
+  "tipNoRates": {
+    "message": "Döviz kuru yok"
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Writing direction of this language: ltr or rtl"
+  },
+  "supportLink": {
+    "message": "Ko-fi'de bana destek ol"
+  }
+}
