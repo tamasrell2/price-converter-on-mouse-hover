@@ -50,7 +50,14 @@ for (let i = 0; i < 20; i++) RATES['X' + String.fromCharCode(65 + i) + 'X'] = 1;
     await page.waitForTimeout(150);
     return await tip();
   }
-  const F = (n, c) => new Intl.NumberFormat('hu-HU', { style: 'currency', currency: c, currencyDisplay: 'narrowSymbol', ...(c === 'HUF' || n >= 10000 ? { minimumFractionDigits: 0, maximumFractionDigits: 0 } : {}) }).format(n);
+  // Várt formázás (a teszt magyar böngészővel fut): forint és euró magyar szokás szerint,
+  // a többi valuta a hazája szokása szerint, ezres elválasztóval négyjegyűeknél is.
+  const F = (n, c) => {
+    let locale = 'hu-HU', latn = {};
+    if (c !== 'HUF' && c !== 'EUR') { const l = new Intl.Locale('und-' + c.slice(0, 2)).maximize(); locale = `${l.language}-${l.region}`; latn = { numberingSystem: 'latn' }; }
+    return new Intl.NumberFormat(locale, { style: 'currency', currency: c, currencyDisplay: 'narrowSymbol', useGrouping: 'always', ...latn,
+      ...(c === 'HUF' || n >= 10000 ? { minimumFractionDigits: 0, maximumFractionDigits: 0 } : {}) }).format(n);
+  };
   const conv = (n, from, to) => F(n / RATES[from] * RATES[to], to);
   let fail = 0;
   async function check(sel, want, frac) {

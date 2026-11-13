@@ -37,7 +37,7 @@ Mindkét esetben nyisd meg a linket egy **inkognitóablakban**, hogy biztosan be
 A projekt mappájában (`price-converter-on-mouse-hover`) futtasd ezt. Csak a bővítmény működéséhez szükséges fájlok kerülnek bele:
 
 ```bash
-zip -r price-converter-on-mouse-hover-1.8.0.zip manifest.json _locales src popup icons
+zip -r price-converter-on-mouse-hover-1.8.1.zip manifest.json _locales src popup icons
 ```
 
 A `store/`, `test/` és `tools/` mappát, valamint a `README.md`-t **ne** tedd bele.

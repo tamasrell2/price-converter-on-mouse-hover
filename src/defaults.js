@@ -74,7 +74,10 @@
     return { target, fallback: NONE };
   }
 
-  const api = { defaultCurrencies, detectCountry, NONE };
+  // Egy ország (ISO régiókód) pénzneme, pl. 'HU' -> 'HUF'; ismeretlennél undefined.
+  const currencyForCountry = (country) => COUNTRY_CURRENCY[country];
+
+  const api = { defaultCurrencies, detectCountry, currencyForCountry, NONE };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else globalThis.HoverPriceDefaults = api;
 })();

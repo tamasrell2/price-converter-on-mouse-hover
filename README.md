@@ -17,6 +17,8 @@ Kattints a bővítmény ikonjára (vagy `chrome://extensions` → Ár átváltó
 
 Ki-be kapcsolni a Chrome bővítménykezelőjében lehet (`chrome://extensions`).
 
+Az átváltott összeget a valuta hazai írásmódja szerint mutatja (pl. `5 000 Ft`, `$1,234.56`, `1 234,56 zł`), négyjegyű számoknál is ezres elválasztóval. A saját valutádat és az eurót a böngésződ nyelvi szokása szerint.
+
 A buborék eltűnik, ha elviszed az egeret, ha bárhová kattintasz, ha megnyomod az Escape-et, vagy ha 6 másodpercig nem mozdul az egér.
 
 ## Telepítés / frissítés

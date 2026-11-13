@@ -337,14 +337,41 @@
 
   // Pénznem-formázók valutánként (pl. "12 345 Ft", "31,62 €", "$34.20" helyett "34,20 $").
   const formatters = new Map();
+  // Melyik nyelvi szokás szerint írjuk ki az összeget:
+  // 1. ha a felhasználó saját valutája (a böngésző régiójáé), akkor a böngésző szokása szerint;
+  // 2. különben a valuta hazájának szokása szerint (HUF -> "5 196 Ft", USD -> "$1,234.56", PLN -> "1 234,56 zł");
+  //    a hazát az ISO-kód első két betűje adja (HUF -> HU), ebből a böngésző beépített adatai a nyelvet;
+  // 3. az euró (sok ország) és a több országos valuták (XAF, XOF…) a böngésző szokása szerint.
+  function formatLocaleFor(currency) {
+    let region;
+    try { region = new Intl.Locale(LOCALE).maximize().region; } catch { /* hibás nyelvkód */ }
+    if (region && globalThis.HoverPriceDefaults.currencyForCountry(region) === currency) return { locale: LOCALE, own: true };
+    if (currency !== 'EUR' && !currency.startsWith('X')) {
+      const cc = currency.slice(0, 2);
+      try {
+        const loc = new Intl.Locale('und-' + cc).maximize();
+        if (loc.region === cc && loc.language !== 'und') return { locale: `${loc.language}-${cc}`, own: false };
+      } catch { /* nincs ilyen régió */ }
+    }
+    return { locale: LOCALE, own: true };
+  }
+
   function format(amount, currency) {
     // Forintnál és nagy összegeknél (10 000 felett) nincs értelme a filléreknek/centeknek.
     const whole = currency === 'HUF' || amount >= 10000;
     const key = currency + (whole ? ':0' : '');
     if (!formatters.has(key)) {
-      const opts = { style: 'currency', currency, currencyDisplay: 'narrowSymbol' };
+      const { locale, own } = formatLocaleFor(currency);
+      // Ezres elválasztó négyjegyű számoknál is ("5 000 Ft", nem "5000 Ft").
+      const opts = { style: 'currency', currency, currencyDisplay: 'narrowSymbol', useGrouping: 'always' };
       if (whole) { opts.minimumFractionDigits = 0; opts.maximumFractionDigits = 0; }
-      formatters.set(key, new Intl.NumberFormat(LOCALE, opts));
+      // Más ország valutájánál mindig 0–9 számjegyek (pl. a szaúdi rijál hazai írásmódja arab számjegyes lenne).
+      if (!own) opts.numberingSystem = 'latn';
+      try {
+        formatters.set(key, new Intl.NumberFormat(locale, opts));
+      } catch {
+        formatters.set(key, new Intl.NumberFormat(LOCALE, { style: 'currency', currency }));
+      }
     }
     return formatters.get(key).format(amount);
   }
