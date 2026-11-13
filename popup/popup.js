@@ -4,9 +4,12 @@ const uiLang = chrome.i18n.getUILanguage();
 
 const { NONE } = globalThis.HoverPriceDefaults;
 const DEFAULTS = globalThis.HoverPriceDefaults.defaultCurrencies();
-const FAVORITES = [...new Set([DEFAULTS.target, 'EUR', 'USD', 'GBP', 'CHF', 'HUF', 'PLN', 'CZK', 'RON', 'JPY', 'CAD', 'AUD'])];
+// "Gyakori" lista: a világ legtöbbet használt valutái, a várható felhasználói kör szerint sorrendben
+// (internetfelhasználók száma, Chrome-részesedés, asztali bővítményhasználat), az élén a hely szerinti valutával.
+const GLOBAL_COMMON = ['USD', 'EUR', 'INR', 'GBP', 'JPY', 'CNY', 'BRL', 'MXN', 'CAD', 'AUD', 'IDR', 'KRW', 'TRY', 'RUB'];
+const FAVORITES = [...new Set([DEFAULTS.target, ...GLOBAL_COMMON])];
 // Ha még nincs letöltött árfolyam, ezekből lehet választani.
-const BASIC_LIST = [...FAVORITES, 'SEK', 'NOK', 'DKK', 'BGN', 'RSD', 'UAH', 'TRY', 'CNY', 'INR'];
+const BASIC_LIST = [...FAVORITES, 'CHF', 'PLN', 'SEK', 'NOK', 'DKK', 'CZK', 'HUF', 'RON', 'SAR', 'AED', 'ZAR', 'NGN', 'PKR', 'PHP', 'VND', 'THB'];
 
 const names = new Intl.DisplayNames([uiLang, 'en'], { type: 'currency' });
 const nameOf = (code) => {

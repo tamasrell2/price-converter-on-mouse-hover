@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — Price Converter on Mouse Hover
 
-> Last Updated: 2026-11-13 · Extension version: 1.7.0
+> Last Updated: 2026-11-13 · Extension version: 1.7.1
 
 Single source of truth for everything typed into the Chrome Web Store Developer Dashboard.
 Copy each block into the matching dashboard field. (Hungarian step-by-step guide: `PUBLISHING.md`.)
@@ -211,13 +211,13 @@ Contact email already filled in (tamasrell@gmail.com).
 
 | Version | Date | Changes | Status |
 |---------|------|---------|--------|
-| 1.7.0 | 2026-11-13 | First store submission. Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); UI in 7 languages; bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
+| 1.7.1 | 2026-11-13 | First store submission. "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); UI in 7 languages; bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
 
 ---
 
 ## Pre-submit checklist
 
-- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.7.0).
+- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.7.1).
 - [ ] ZIP contains only: `manifest.json`, `_locales/`, `src/`, `popup/`, `icons/` (no `store/`, `test/`, `tools/`, `README.md`, `CHROMEWEBSTORE.md`). Command in `PUBLISHING.md`.
 - [ ] Loaded the ZIP's contents unpacked in Chrome and tested: hover converts, popup opens, no console errors.
 - [ ] Every permission row above pasted into the dashboard.
