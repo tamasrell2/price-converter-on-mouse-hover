@@ -85,13 +85,14 @@ const read = (f) => fs.readFileSync(path.join(STORE, f));
   const pop = await ctx.newPage();
   // 1,4-szeres nagyítással rendereljük, hogy a vásznon éles legyen (ne felnagyított kép).
   const ZOOM = 1.4;
-  await pop.setViewportSize({ width: Math.round(300 * ZOOM), height: 600 });
+  const POPUP_W = 330; // a beállítások ablak szélessége (popup.css body width)
+  await pop.setViewportSize({ width: Math.round(POPUP_W * ZOOM), height: 600 });
   await pop.goto(`chrome-extension://${extId}/popup/popup.html`);
   await pop.waitForTimeout(500);
   await pop.evaluate((z) => { document.documentElement.style.zoom = z; }, ZOOM);
   await pop.waitForTimeout(200);
   const bodyH = await pop.evaluate(() => Math.ceil(document.body.getBoundingClientRect().height));
-  const popupPng = await pop.screenshot({ clip: { x: 0, y: 0, width: Math.round(300 * ZOOM), height: bodyH } });
+  const popupPng = await pop.screenshot({ clip: { x: 0, y: 0, width: Math.round(POPUP_W * ZOOM), height: bodyH } });
   await pop.close();
   const popupData = 'data:image/png;base64,' + popupPng.toString('base64');
   const iconData = 'data:image/png;base64,' + fs.readFileSync(path.join(EXT, 'icons', 'icon-128.png')).toString('base64');
@@ -104,9 +105,9 @@ const read = (f) => fs.readFileSync(path.join(STORE, f));
     .text { width: 470px; } .text img { width: 72px; height: 72px; }
     h1 { font-size: 44px; line-height: 1.1; margin: 18px 0 14px; letter-spacing: -.02em; }
     p { font-size: 20px; line-height: 1.5; color: #475569; margin: 0 0 10px; }
-    .shot { width: 420px; border-radius: 16px; overflow: hidden; background: #fff;
+    .shot { width: ${Math.round(POPUP_W * ZOOM)}px; border-radius: 16px; overflow: hidden; background: #fff;
       box-shadow: 0 30px 60px rgb(15 23 42 / .18), 0 0 0 1px rgb(15 23 42 / .06); }
-    .shot img { display: block; width: 420px; }
+    .shot img { display: block; width: ${Math.round(POPUP_W * ZOOM)}px; }
   </style></head><body>
     <div class="text"><img src="${iconData}" alt=""><h1>Your currency, your rules</h1>
       <p>Pick the currency you think in. It is preselected based on where you are.</p>
@@ -138,7 +139,7 @@ const read = (f) => fs.readFileSync(path.join(STORE, f));
       border-bottom: 0; border-top-color: #0f172a; }
     .chips { position: absolute; right: 26px; bottom: 30px; display: grid; gap: 8px; text-align: right; font-size: 14px; opacity: .9; }
   </style></head><body>
-    <div class="brand"><span class="ic"><img src="${iconData}" alt=""></span><b>Price Converter on Mouse Hover</b></div>
+    <div class="brand"><span class="ic"><img src="${iconData}" alt=""></span><b>Super Simple Currency Converter</b></div>
     <div class="tag">Hover any price. See it in your currency.</div>
     <div class="tip">$269.89</div>
     <div class="card"></div>

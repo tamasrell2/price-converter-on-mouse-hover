@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Fareyle Üzerine Gelince Fiyat Çevirici"
+    "message": "Süper Basit Döviz Çevirici"
   },
   "extDescription": {
     "message": "Herhangi bir sitede bir fiyatın üzerine gelin, tutarı anında kendi para biriminizde görün."
   },
   "actionTitle": {
-    "message": "Fiyat çevirici ayarları"
+    "message": "Süper Basit Döviz Çevirici"
   },
   "settingsTitle": {
-    "message": "Fiyat çevirici ayarları"
+    "message": "Süper Basit Döviz Çevirici"
   },
   "heading": {
-    "message": "Fiyat Çevirici"
+    "message": "Süper Basit Döviz Çevirici"
   },
   "targetLabel": {
     "message": "Fiyatları şu para biriminde göster"

@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "マウスオーバー価格換算"
+    "message": "超シンプル通貨換算"
   },
   "extDescription": {
     "message": "どのサイトでも価格にマウスを合わせるだけで、あなたの通貨に換算した金額をすぐに表示します。"
   },
   "actionTitle": {
-    "message": "価格換算の設定"
+    "message": "超シンプル通貨換算"
   },
   "settingsTitle": {
-    "message": "価格換算の設定"
+    "message": "超シンプル通貨換算"
   },
   "heading": {
-    "message": "価格換算"
+    "message": "超シンプル通貨換算"
   },
   "targetLabel": {
     "message": "価格の表示通貨"

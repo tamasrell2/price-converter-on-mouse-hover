@@ -1,4 +1,6 @@
-# Price Converter on Mouse Hover — magyarul: Ár átváltó (Chrome bővítmény)
+# Super Simple Currency Converter (SSCC) — magyarul: Elképesztően Egyszerű Valuta Váltó (EEVV)
+
+Chrome bővítmény.
 
 Vidd az egeret egy ár fölé bármelyik weboldalon, és buborékban megmutatja a kiválasztott valutában.
 A felismert ár halványsárga kiemelést kap.
@@ -9,7 +11,7 @@ A felismert ár halványsárga kiemelést kap.
   Semmilyen adat nem megy ki a gépről, és a felhasználó választása mindig felülírja.
 
 ## Beállítások
-Kattints a bővítmény ikonjára (vagy `chrome://extensions` → Ár átváltó → Részletek → Bővítmény beállításai):
+Kattints a bővítmény ikonjára (vagy `chrome://extensions` → Elképesztően Egyszerű Valuta Váltó → Részletek → Bővítmény beállításai):
 - **Mutassa ebben a valutában** – a célvaluta (alap: a hely szerinti valuta, vagy dollár)
 - **Ha az ár már ebben a valutában van** – alapból nem mutat semmit; választható egy másik valuta is (pl. forint árnál euró)
 - árfolyamok kézi frissítése
@@ -44,5 +46,5 @@ illetve fawazahmed0 currency-api. 6 óránként frissül.
 - Böngészős tesztek (Playwright + Chromium kell hozzá):
   `node test/e2e/hover.e2e.js`, `node test/e2e/locale.e2e.js`, `node test/e2e/page-css.e2e.js`
 - Bolti képernyőképek újragenerálása: `node store/make-screenshots.js`
-- Bolti csomag: `zip -r price-converter-on-mouse-hover-<verzió>.zip manifest.json _locales src popup icons`
+- Bolti csomag: `zip -r super-simple-currency-converter-<verzió>.zip manifest.json _locales src popup icons`
 - Ikonok újragenerálása: `python3 tools/make-icons.py`

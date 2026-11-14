@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Price Converter on Mouse Hover"
+    "message": "Super Simple Currency Converter"
   },
   "extDescription": {
     "message": "Hover over a price on any website and see it converted to your currency instantly."
   },
   "actionTitle": {
-    "message": "Price converter settings"
+    "message": "Super Simple Currency Converter"
   },
   "settingsTitle": {
-    "message": "Price converter settings"
+    "message": "Super Simple Currency Converter"
   },
   "heading": {
-    "message": "Price Converter"
+    "message": "Super Simple Currency Converter"
   },
   "targetLabel": {
     "message": "Show prices in"

@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Konverter Harga saat Mouse Diarahkan"
+    "message": "Konverter Mata Uang Super Simpel"
   },
   "extDescription": {
     "message": "Arahkan mouse ke harga di situs mana pun dan langsung lihat nilainya dalam mata uang Anda."
   },
   "actionTitle": {
-    "message": "Pengaturan konverter harga"
+    "message": "Konverter Mata Uang Super Simpel"
   },
   "settingsTitle": {
-    "message": "Pengaturan konverter harga"
+    "message": "Konverter Mata Uang Super Simpel"
   },
   "heading": {
-    "message": "Konverter Harga"
+    "message": "Konverter Mata Uang Super Simpel"
   },
   "targetLabel": {
     "message": "Tampilkan harga dalam"

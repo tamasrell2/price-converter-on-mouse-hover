@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Convertisseur de prix au survol"
+    "message": "Convertisseur de devises super simple"
   },
   "extDescription": {
     "message": "Survolez un prix sur n'importe quel site et voyez-le aussitôt converti dans votre devise."
   },
   "actionTitle": {
-    "message": "Paramètres du convertisseur de prix"
+    "message": "Convertisseur de devises super simple"
   },
   "settingsTitle": {
-    "message": "Paramètres du convertisseur de prix"
+    "message": "Convertisseur de devises super simple"
   },
   "heading": {
-    "message": "Convertisseur de prix"
+    "message": "Convertisseur de devises super simple"
   },
   "targetLabel": {
     "message": "Afficher les prix en"

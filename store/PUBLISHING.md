@@ -1,4 +1,4 @@
-# Feltöltés a Chrome Web Store-ba – Price Converter on Mouse Hover (magyarul: Ár átváltó)
+# Feltöltés a Chrome Web Store-ba – Super Simple Currency Converter (magyarul: Elképesztően Egyszerű Valuta Váltó)
 
 Minden bemásolandó szöveg a `CHROMEWEBSTORE.md`-ben van (angolul, ahogy a bolt kéri). Ez a leírás azt mondja meg, hova kerüljenek.
 
@@ -37,7 +37,7 @@ Mindkét esetben nyisd meg a linket egy **inkognitóablakban**, hogy biztosan be
 A projekt mappájában (`price-converter-on-mouse-hover`) futtasd ezt. Csak a bővítmény működéséhez szükséges fájlok kerülnek bele:
 
 ```bash
-zip -r price-converter-on-mouse-hover-1.8.1.zip manifest.json _locales src popup icons
+zip -r super-simple-currency-converter-1.9.0.zip manifest.json _locales src popup icons
 ```
 
 A `store/`, `test/` és `tools/` mappát, valamint a `README.md`-t **ne** tedd bele.
