@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Conversor de divisas súper sencillo"
+    "message": "Conversor de Cambio Súper Sencillo"
   },
   "extDescription": {
     "message": "Pasa el ratón sobre un precio en cualquier web y míralo al instante convertido a tu moneda."
   },
   "actionTitle": {
-    "message": "Conversor de divisas súper sencillo"
+    "message": "Conversor de Cambio Súper Sencillo"
   },
   "settingsTitle": {
-    "message": "Conversor de divisas súper sencillo"
+    "message": "Conversor de Cambio Súper Sencillo"
   },
   "heading": {
-    "message": "Conversor de divisas súper sencillo"
+    "message": "Conversor de Cambio Súper Sencillo"
   },
   "targetLabel": {
     "message": "Mostrar los precios en"

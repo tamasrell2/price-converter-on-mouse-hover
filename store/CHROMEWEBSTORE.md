@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — Super Simple Currency Converter (SSCC)
 
-> Last Updated: 2026-11-14 · Extension version: 1.9.0
+> Last Updated: 2026-11-14 · Extension version: 1.9.1
 
 Single source of truth for everything typed into the Chrome Web Store Developer Dashboard.
 Copy each block into the matching dashboard field. (Hungarian step-by-step guide: `PUBLISHING.md`.)
@@ -17,15 +17,17 @@ The dashboard shows it automatically per language; nothing to type.
 |---|---|
 | English (default) | Super Simple Currency Converter (short: SSCC) |
 | Hungarian | Elképesztően Egyszerű Valuta Váltó (short: EEVV) |
-| Chinese (Simplified) | 超简单货币换算器 |
-| Hindi | सुपर सिंपल करेंसी कन्वर्टर |
-| Spanish | Conversor de divisas súper sencillo |
-| Arabic | محوّل العملات فائق البساطة |
-| French | Convertisseur de devises super simple |
-| Japanese | 超シンプル通貨換算 |
-| Indonesian | Konverter Mata Uang Super Simpel |
-| Turkish | Süper Basit Döviz Çevirici |
-| Russian | Суперпростой конвертер валют |
+| Chinese (Simplified) | 简简单单货币换算 |
+| Hindi | सुपर सरल करेंसी कन्वर्टर |
+| Spanish | Conversor de Cambio Súper Sencillo |
+| Arabic | المحوّل المبسّط للعملات العالمية |
+| French | Convertisseur de Change Super Simple |
+| Japanese | らくらく為替換算 |
+| Indonesian | Konverter Kurs Super Simpel |
+| Turkish | Süper Sade Döviz Dönüştürücü |
+| Russian | Простой пересчёт валют вмиг |
+
+Naming pattern: like SSCC / EEVV, every name alliterates in pairs (first two words share an initial sound, last two share another; small words such as "de" are ignored). Japanese and Chinese use reduplication (rakuraku, jiǎnjiǎn dāndān) followed by a matching pair.
 
 **Short Description** [REQUIRED] — also comes from `extDescription` in each locale (all ≤ 132 chars).
 English:
@@ -227,13 +229,13 @@ Contact email already filled in (tamasrell@gmail.com).
 
 | Version | Date | Changes | Status |
 |---------|------|---------|--------|
-| 1.9.0 | 2026-11-14 | First store submission (resubmitted after renaming from "Price Converter on Mouse Hover" to "Super Simple Currency Converter"). Converted amounts written the way each currency is written at home (e.g. 5 000 Ft, $1,234.56, 1 234,56 zł); UI in 11 languages (added Japanese, Indonesian, Turkish, Russian); "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
+| 1.9.1 | 2026-11-14 | First store submission (resubmitted after renaming from "Price Converter on Mouse Hover" to "Super Simple Currency Converter"). Converted amounts written the way each currency is written at home (e.g. 5 000 Ft, $1,234.56, 1 234,56 zł); UI in 11 languages (added Japanese, Indonesian, Turkish, Russian); "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
 
 ---
 
 ## Pre-submit checklist
 
-- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.9.0).
+- [ ] `manifest_version` is 3, version bumped above the last uploaded one (now 1.9.1).
 - [ ] ZIP contains only: `manifest.json`, `_locales/`, `src/`, `popup/`, `icons/` (no `store/`, `test/`, `tools/`, `README.md`, `CHROMEWEBSTORE.md`). Command in `PUBLISHING.md`.
 - [ ] Loaded the ZIP's contents unpacked in Chrome and tested: hover converts, popup opens, no console errors.
 - [ ] Every permission row above pasted into the dashboard.

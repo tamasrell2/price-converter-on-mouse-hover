@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "Süper Basit Döviz Çevirici"
+    "message": "Süper Sade Döviz Dönüştürücü"
   },
   "extDescription": {
     "message": "Herhangi bir sitede bir fiyatın üzerine gelin, tutarı anında kendi para biriminizde görün."
   },
   "actionTitle": {
-    "message": "Süper Basit Döviz Çevirici"
+    "message": "Süper Sade Döviz Dönüştürücü"
   },
   "settingsTitle": {
-    "message": "Süper Basit Döviz Çevirici"
+    "message": "Süper Sade Döviz Dönüştürücü"
   },
   "heading": {
-    "message": "Süper Basit Döviz Çevirici"
+    "message": "Süper Sade Döviz Dönüştürücü"
   },
   "targetLabel": {
     "message": "Fiyatları şu para biriminde göster"
