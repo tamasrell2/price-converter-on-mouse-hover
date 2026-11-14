@@ -44,7 +44,7 @@ illetve fawazahmed0 currency-api. 6 óránként frissül.
 ## Fejlesztés
 - Egységtesztek: `node --test test/parser.test.js test/defaults.test.js`
 - Böngészős tesztek (Playwright + Chromium kell hozzá):
-  `node test/e2e/hover.e2e.js`, `node test/e2e/locale.e2e.js`, `node test/e2e/page-css.e2e.js`
+  `node test/e2e/hover.e2e.js`, `node test/e2e/locale.e2e.js`, `node test/e2e/page-css.e2e.js`, `node test/e2e/orphan.e2e.js`
 - Bolti képernyőképek újragenerálása: `node store/make-screenshots.js`
 - Bolti csomag: `zip -r super-simple-currency-converter-<verzió>.zip manifest.json _locales src popup icons`
 - Ikonok újragenerálása: `python3 tools/make-icons.py`

@@ -454,18 +454,22 @@
 
   // A bővítményt frissítették vagy kikapcsolták: ez a példány eltakarít maga után és leáll.
   function teardown() {
-    hide();
+    if (stopped) return;
     stopped = true;
-    observer.disconnect();
-    host.remove();
+    try { hide(); } catch { /* már nincs mit elrejteni */ }
+    try { observer.disconnect(); } catch { /* már leállt */ }
+    try { host.remove(); } catch { /* már nincs az oldalon */ }
   }
 
   // Ha az oldal tartalma változik (pl. betöltődik egy új ár), a régi tartományok érvénytelenek lehetnek.
+  // Figyelem: az observe() nem adja vissza az objektumot, ezért külön sorban indítjuk.
   const observer = new MutationObserver((records) => {
+    if (stopped) return;
     if (records.every(r => r.target === host || r.addedNodes[0] === host)) return;
     dirty = true;
     if (active && lastPointer) schedule(lastPointer.x, lastPointer.y);
-  }).observe(document.documentElement, {
+  });
+  observer.observe(document.documentElement, {
     childList: true, subtree: true, characterData: true,
   });
 
