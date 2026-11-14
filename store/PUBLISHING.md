@@ -37,7 +37,7 @@ Mindkét esetben nyisd meg a linket egy **inkognitóablakban**, hogy biztosan be
 A projekt mappájában (`price-converter-on-mouse-hover`) futtasd ezt. Csak a bővítmény működéséhez szükséges fájlok kerülnek bele:
 
 ```bash
-zip -r super-simple-currency-converter-1.9.1.zip manifest.json _locales src popup icons
+zip -r super-simple-currency-converter-1.9.2.zip manifest.json _locales src popup icons
 ```
 
 A `store/`, `test/` és `tools/` mappát, valamint a `README.md`-t **ne** tedd bele.

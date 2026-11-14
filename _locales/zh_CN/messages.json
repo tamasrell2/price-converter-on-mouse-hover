@@ -1,18 +1,18 @@
 {
   "extName": {
-    "message": "简简单单货币换算"
+    "message": "超简单货币换算器"
   },
   "extDescription": {
     "message": "将鼠标悬停在任意网站的价格上，即可立即看到换算成您所用货币的金额。"
   },
   "actionTitle": {
-    "message": "简简单单货币换算"
+    "message": "超简单货币换算器"
   },
   "settingsTitle": {
-    "message": "简简单单货币换算"
+    "message": "超简单货币换算器"
   },
   "heading": {
-    "message": "简简单单货币换算"
+    "message": "超简单货币换算器"
   },
   "targetLabel": {
     "message": "将价格显示为"
