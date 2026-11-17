@@ -1,6 +1,6 @@
 # Super Simple Currency Converter (SSCC) — magyarul: Elképesztően Egyszerű Valuta Váltó (EEVV)
 
-Chrome bővítmény.
+Chrome bővítmény. **Chrome Web Store:** https://chromewebstore.google.com/detail/bbpgdgcjoeleioekckgfobfgcacmkken
 
 Vidd az egeret egy ár fölé bármelyik weboldalon, és buborékban megmutatja a kiválasztott valutában.
 A felismert ár halványsárga kiemelést kap.

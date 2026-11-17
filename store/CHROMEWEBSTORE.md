@@ -1,6 +1,6 @@
 # Chrome Web Store Listing — Super Simple Currency Converter (SSCC)
 
-> Last Updated: 2026-11-14 · Extension version: 1.9.3
+> Last Updated: 2026-11-17 · Extension version: 1.9.3 · Live: 1.8.1 — https://chromewebstore.google.com/detail/bbpgdgcjoeleioekckgfobfgcacmkken
 
 Single source of truth for everything typed into the Chrome Web Store Developer Dashboard.
 Copy each block into the matching dashboard field. (Hungarian step-by-step guide: `PUBLISHING.md`.)
@@ -229,7 +229,8 @@ Contact email already filled in (tamasrell@gmail.com).
 
 | Version | Date | Changes | Status |
 |---------|------|---------|--------|
-| 1.9.3 | 2026-11-14 | First store submission. Fix: after an extension update, the instance still running in open tabs now shuts down cleanly (no "disconnect" error, no leftover bubble). (resubmitted after renaming from "Price Converter on Mouse Hover" to "Super Simple Currency Converter"). Converted amounts written the way each currency is written at home (e.g. 5 000 Ft, $1,234.56, 1 234,56 zł); UI in 11 languages (added Japanese, Indonesian, Turkish, Russian); "Common" currency list ordered for a worldwide audience; Ko-fi support button in the settings popup; new currency-neutral icon (price tag with exchange arrows). 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); bubble reliably hides on mouse-out, click, Escape, after 6 s idle. | Draft |
+| 1.9.3 | 2026-11-17 | First update: renamed from "Price Converter on Mouse Hover" to "Super Simple Currency Converter" (alliterative names in most languages); converted amounts written the way each currency is written at home (e.g. 5 000 Ft, $1,234.56, 1 234,56 zł); UI in 11 languages (added Japanese, Indonesian, Turkish, Russian); "Common" currency list ordered for a worldwide audience; fix: after an extension update, the instance still running in open tabs shuts down cleanly. | Draft (to submit) |
+| 1.8.1 | 2026-11-17 | First public release on the Chrome Web Store, as "Price Converter on Mouse Hover". 160+ currencies; superscript cents and M/k multipliers; currency preselected from location (fallback USD); "show nothing" for prices already in the target currency (default); Ko-fi support button; currency-neutral icon; bubble hides on mouse-out, click, Escape, after 6 s idle. | Published (public) |
 
 ---
 
